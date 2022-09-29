@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2098/2098402.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>Task list</title>
+</head>
+<body class="min-h-screen">
+    <div class="container  w-4/5 border-4 p-20 mt-20 flex flex-col">
+        <h1 class="title">Task list</h1>
+        <section>
+            <form id="task-form">
+                <div class="input-field col">
+                    <input type="text" name="task" id="task" class="input">
+                    <label for="task left-0">New task</label>
+                </div>
+                <input type="submit" value="Add task" class="btn add-btn bg-orange-600 hover:bg-orange-400">
+            </form>
+        </section>
+        <section>
+            <h4 class="subtitle pt-10">Tasks</h4>
+            <div class="input-field col">
+                <input type="text" name="filter" id="filter" class="input">
+                <label for="filter left-0" >Filter tasks</label>
+            </div>
+            <ul class="collection"></ul>
+            <button class="btn clear-task mt-2 bg-red-600 hover:bg-red-400" type="button">Clear tasks</button>
+        </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" rossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/src/app.js"></script>
+    
+</body>
+</html>
